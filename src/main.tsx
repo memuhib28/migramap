@@ -288,6 +288,7 @@ function Shell({ ur, setUr }: { ur: boolean; setUr: (v: boolean) => void }) {
             >
               <Menu />
             </button>
+            <span className="mobile-brand" aria-label="MigraMap" dir="ltr"><BrainMark /><strong>Migra<span>Map</span></strong></span>
             <span className="breadcrumb">
               {t("Your wellbeing journal", "آپ کی کیفیت کی ڈائری")}
               <span>/</span>

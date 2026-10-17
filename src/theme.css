@@ -389,3 +389,19 @@ input[type="checkbox"] {
   min-height: 14px;
   flex-basis: 14px;
 }
+
+/* Keep the brand visible when the desktop sidebar becomes a drawer. */
+.mobile-brand { display: none; }
+@media (max-width: 850px) {
+  .topbar .breadcrumb { display: none; }
+  .mobile-brand { display: inline-flex; align-items: center; gap: 7px; flex-shrink: 0; color: #34305e; }
+  .mobile-brand strong { font-size: 19px; line-height: 1.2; letter-spacing: -.5px; }
+  .mobile-brand strong span { color: #168f94; }
+  .mobile-brand .brain-mark { width: 32px; height: 32px; }
+  .topbar { min-height: 64px; height: auto; padding-block: 8px; gap: 10px; flex-wrap: wrap; }
+  .topbar > .row { flex-wrap: nowrap; }
+  .topbar > .row:last-child { margin-inline-start: auto; }
+}
+@media (max-width: 380px) {
+  .topbar > .row:first-child { width: 100%; }
+}
